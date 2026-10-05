@@ -8,7 +8,7 @@
 
 **Giving older Realtek RTL8188SU USB Wi-Fi adapters another chance on modern Linux.** ☕ 🐧
 
-This project adapts the Linux **v6.12 staging `rtl8712` driver** for newer kernels, adds defensive parsing and teardown fixes, and provides a reproducible **DKMS** source package. The driver code lives in [`driver/`](driver/) so this README stays near the top of the GitHub page. It began as a working port for the **LevelOne WUA-0624** (`0bda:8171`) on Ubuntu 26.04.
+This project adapts the Linux **v6.12 staging `rtl8712` driver** for newer kernels, adds defensive parsing and teardown fixes, and provides a reproducible **DKMS** source package. The driver code lives in [`driver/`](driver/). It began as a working port for the **LevelOne WUA-0624** (`0bda:8171`) on Ubuntu 26.04.
 
 > [!IMPORTANT]
 > **Experimental, not an upstream or universally tested driver.** Keep an alternate means of network access and a working backup. A successful build is not proof that every USB adapter, access point or kernel configuration works.
