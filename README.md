@@ -4,7 +4,7 @@
 ![Linux kernel module](https://img.shields.io/badge/Linux-kernel%20module-555555)
 ![DKMS](https://img.shields.io/badge/DKMS-supported-2ea44f)
 ![Status](https://img.shields.io/badge/Status-experimental-orange)
-[![Support on PayPal](https://img.shields.io/badge/Buy%20me%20a%20coffee-PayPal-0070ba)](https://www.paypal.me/firdausaziz)
+[![Support on PayPal](https://img.shields.io/badge/Buy%20me%20a%20coffee-PayPal-0070ba)](https://www.paypal.com/ncp/payment/BJW38XK6LZWUQ)
 
 **Giving older Realtek RTL8188SU USB Wi-Fi adapters another chance on modern Linux.** ☕ 🐧
 
@@ -83,6 +83,6 @@ The driver is derived from Linux **v6.12**, `drivers/staging/rtl8712`. Original 
 
 **If this is useful, buy me a coffee!**
 
-[**Support this project on PayPal**](https://www.paypal.me/firdausaziz)
+[**Support this project on PayPal**](https://www.paypal.com/ncp/payment/BJW38XK6LZWUQ)
 
 Contributions, useful bug reports and compatibility test results are welcome, too.
