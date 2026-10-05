@@ -1,0 +1,31 @@
+# Linux out-of-tree module build products
+*.o
+*.ko
+*.ko.*
+*.mod
+*.mod.c
+*.order
+modules.order
+Module.symvers
+.*.cmd
+.tmp_versions/
+.tmp_*/
+*.symvers
+*.d
+*.a
+*.so
+# Compiled modules and local release assets (publish as separate release attachments)
+dist/
+# Tests and local builds
+tests/parser_test
+tests/extended_test
+tests/extended_test.c
+__pycache__/
+*.pyc
+*.log
+*.swp
+*~
+# Backup and development-only files
+*.backup
+*.before-*
+*.bak
