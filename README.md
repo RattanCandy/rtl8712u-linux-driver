@@ -38,3 +38,9 @@ The source tree is used by the standalone parser harness in `tests/` (the saniti
 ## Provenance and license
 
 The starting point is `drivers/staging/rtl8712` in Linux v6.12, copyright and per-file notices retained. Source is licensed **GPL-2.0** under its original SPDX declarations. Redistribution must retain the original copyright and license notices. No firmware or third-party proprietary binary is included.
+
+## Support
+
+If this is useful, buy me a coffee! ☕
+
+[Support me on PayPal](https://paypal.me/YOUR_PAYPAL_USERNAME) *(placeholder — PayPal link to be added)*
