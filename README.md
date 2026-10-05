@@ -43,4 +43,4 @@ The starting point is `drivers/staging/rtl8712` in Linux v6.12, copyright and pe
 
 If this is useful, buy me a coffee! ☕
 
-[Support me on PayPal](https://paypal.me/YOUR_PAYPAL_USERNAME) *(placeholder — PayPal link to be added)*
+[Support me on PayPal](https://www.paypal.me/firdausaziz)
