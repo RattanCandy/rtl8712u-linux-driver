@@ -8,7 +8,7 @@
 
 **Giving older Realtek RTL8188SU USB Wi-Fi adapters another chance on modern Linux.** ☕ 🐧
 
-This project adapts the Linux **v6.12 staging `rtl8712` driver** for newer kernels, adds defensive parsing and teardown fixes, and provides a reproducible **DKMS** source package. It began as a working port for the **LevelOne WUA-0624** (`0bda:8171`) on Ubuntu 26.04.
+This project adapts the Linux **v6.12 staging `rtl8712` driver** for newer kernels, adds defensive parsing and teardown fixes, and provides a reproducible **DKMS** source package. The driver code lives in [`driver/`](driver/) so this README stays near the top of the GitHub page. It began as a working port for the **LevelOne WUA-0624** (`0bda:8171`) on Ubuntu 26.04.
 
 > [!IMPORTANT]
 > **Experimental, not an upstream or universally tested driver.** Keep an alternate means of network access and a working backup. A successful build is not proof that every USB adapter, access point or kernel configuration works.
@@ -43,7 +43,7 @@ Make sure matching Linux headers, GCC, make, DKMS (if wanted), and the separate 
 
 ```bash
 git clone https://github.com/RattanCandy/rtl8712u-linux-driver.git
-cd rtl8712u-linux-driver
+cd rtl8712u-linux-driver/driver
 make -C /lib/modules/$(uname -r)/build M="$PWD" CONFIG_R8712U=m modules
 modinfo -F vermagic ./r8712u.ko
 ```
@@ -52,7 +52,7 @@ This generates `r8712u.ko` for **that exact kernel**. Loading or swapping a Wi-F
 
 ### Optional DKMS installation
 
-`dkms.conf` defines `r8712u/6.12-compat2`. After reviewing the source and verifying a recovery path:
+`driver/dkms.conf` defines `r8712u/6.12-compat2`. After reviewing the source and verifying a recovery path, run these commands from the `driver/` directory:
 
 ```bash
 sudo mkdir -p /usr/src/r8712u-6.12-compat2
@@ -67,7 +67,7 @@ This installs a kernel-specific module for subsequent normal loads; it does **no
 
 ## 🧪 Testing and limitations
 
-- Sanitizer-backed parser tests cover RSN handling, PMKID parsing, IE traversal, and malformed-input cases. Test generators are in `tests/`.
+- Sanitizer-backed parser tests cover RSN handling, PMKID parsing, IE traversal, and malformed-input cases. Test generators are in [`driver/tests/`](driver/tests/).
 - The maintained adapter completed a WPA2 handshake, associated with `Prometheus`, received an IP address and passed LAN/internet traffic checks.
 - Known unresolved review area: **station-reuse timer concurrency**. Treat the port as experimental until additional race and lifecycle testing is done.
 

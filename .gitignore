@@ -17,9 +17,9 @@ Module.symvers
 # Compiled modules and local release assets (publish as separate release attachments)
 dist/
 # Tests and local builds
-tests/parser_test
-tests/extended_test
-tests/extended_test.c
+driver/tests/parser_test
+driver/tests/extended_test
+driver/tests/extended_test.c
 __pycache__/
 *.pyc
 *.log
